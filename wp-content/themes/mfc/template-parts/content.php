@@ -11,49 +11,46 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<p class="lead"><?php the_date(); ?></p>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				
+			</div>
+		</div>
+	</header>
+		
+	<section class="container-fluid">	
+		<div class="row entry-meta">
+			<div class="col-sm-12">
+				<p><?php mfc_posted_on(); ?> <?php mfc_posted_by(); ?></p>
+			</div>
+		</div>
 
-		if ( 'post' === get_post_type() ) :
+		<div class="row entry-content">
+			<?php
+			the_content( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mfc' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			) );
 			?>
-			<div class="entry-meta">
-				<?php
-				mfc_posted_on();
-				mfc_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
 
-	<?php mfc_post_thumbnail(); ?>
+		</div>
+	</section>
 
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mfc' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mfc' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php mfc_entry_footer(); ?>
+	<footer class="entry-footer container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<?php the_category( ', ' ); ?>
+			</div>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
