@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -354,14 +355,13 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Lato";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  color: blue; }
+  clear: both; }
 
 p {
   margin-bottom: 1.5em; }
@@ -524,7 +524,7 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #136B7A; }
 
 select {
   border: 1px solid #ccc; }
@@ -539,11 +539,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #136B7A; }
   a:visited {
-    color: purple; }
+    color: #05A0AE; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #85BCDA; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
