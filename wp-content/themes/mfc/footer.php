@@ -14,19 +14,51 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mfc' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'mfc' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'mfc' ), 'mfc', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+			<section class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button>donate</button>
+					</div>
+				</div>
+			</section>
+			<section class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Stay up to date</h2>
+						<p>Sign up for our newsletter</p>
+						<form class="form-inline">
+  							<label class="sr-only" for="inlineFormInputName2">Name</label>
+  							<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+  							<button type="submit" class="btn btn-primary mb-2">Submit</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="container-fluid site-info">
+				<div class="row">
+					<div class="col-sm-3">
+						<div><p>logo</p></div>
+					</div>
+					<div class="col-sm-6">
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Get Involved</a></li>
+								<li><a href="#">Get Help</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Donate</a></li>
+								<li><a href="#">Resources</a></li>
+								<li><a href="#">Give Feedback</a></li>
+								<li><a href="#">Careers</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-3">
+						<a href="#">Contact Us</a>
+					</div>
+				</div><!-- .row -->
+			</section><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
