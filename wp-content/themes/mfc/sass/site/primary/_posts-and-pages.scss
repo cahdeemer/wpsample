@@ -2,6 +2,69 @@
 	display: block;
 }
 
+.flex-container {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.flex-item {
+	flex: 1;
+}
+
+.circle-img {
+	height: $size__circle-diameter;
+	width: $size__circle-diameter;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: $color__background-button;
+}
+
+.circle-container {
+	position: relative;
+	top: 50px;
+	height: 400px;
+	width: 400px;
+	display: flex;
+	margin: 10px;
+    border-radius: 50%;
+    border: 1px dashed grey;
+}
+
+.circle-1 {
+	position: absolute;
+    left: calc(50% - #{$size__circle-radius});
+    top: -#{$size__circle-radius};
+	background-color: orange;
+}
+
+.circle-2 {
+	position: absolute;
+    left: -#{$size__circle-radius};
+    top: calc(50% - #{$size__circle-radius});
+	background-color: blue;
+}
+
+.circle-3 {
+	position: absolute;
+    right: -#{$size__circle-radius};
+    top: calc(50% - #{$size__circle-radius});
+	background-color: green;
+}
+
+.circle-4 {
+	position: absolute;
+    top: calc(100% - #{$size__circle-radius});
+    left: calc(50% - #{$size__circle-radius});
+	background-color: red;
+}
+
 .post,
 .page {
 	margin: 0 0 1.5em;
