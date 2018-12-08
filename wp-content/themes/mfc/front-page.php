@@ -15,7 +15,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style="background: center / cover no-repeat linear-gradient(rgba(245,162,47,0.6), rgba(255,255,255,0.4)), url('<?php echo get_template_directory_uri(); ?>/assets/family_flowers_bkgr.jpg') center;">
             <div class="container">
                 <button>Give Feedback</button>
                 <h1 class="display-4">Stronger Families.<br>Stronger Communities</h1>
@@ -55,9 +55,9 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-5">
                     <h2>What's New</h2>
-                    <figure class="figure">
-                        <img src="https://picsum.photos/400/200" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    <figure class="figure callout-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/kids-playing-outside.jpg" class="figure-img img-fluid" alt="A generic square placeholder imagein a figure.">
+                        <figcaption class="figure-caption">Kids playing outside. Credit: Shutterstock.</figcaption>
                     </figure>
                     <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
                 </div>
@@ -128,8 +128,8 @@ get_header(); ?>
          <section class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
-                <figure class="figure">
-                        <img src="https://picsum.photos/400/200" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figure class="figure callout-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/birthday_party.jpg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
                         <figcaption class="figure-caption">A caption for the above image.</figcaption>
                     </figure>
                     <h3>Mentor</h3>
@@ -137,8 +137,8 @@ get_header(); ?>
                     <button class="btn">Learn More</button>
                 </div>
                 <div class="col-sm-4">
-                <figure class="figure">
-                        <img src="https://picsum.photos/400/200" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figure class="figure callout-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/mom_and_baby.jpeg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
                         <figcaption class="figure-caption">A caption for the above image.</figcaption>
                     </figure>
                     <h3>Foster</h3>
@@ -146,8 +146,8 @@ get_header(); ?>
                     <button class="btn">Learn More</button>
                 </div>
                 <div class="col-sm-4">
-                <figure class="figure">
-                        <img src="https://picsum.photos/400/200" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figure class="figure callout-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/moms_and_baby.jpg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
                         <figcaption class="figure-caption">A caption for the above image.</figcaption>
                     </figure>
                     <h3>Adopt</h3>

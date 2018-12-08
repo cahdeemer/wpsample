@@ -33,6 +33,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Jumbotron
 # Widgets
 # Content
 	## Posts and pages
@@ -84,6 +85,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Clearings
 --------------------------------------------------------------*/
 @import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Jumbotron
+--------------------------------------------------------------*/
+@import "modules/jumbotron";
 
 /*--------------------------------------------------------------
 # Widgets

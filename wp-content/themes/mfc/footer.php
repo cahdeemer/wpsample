@@ -37,7 +37,10 @@
 			<section class="container-fluid site-info">
 				<div class="row">
 					<div class="col-sm-3">
-						<div><p>logo</p></div>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-link">
+         					<?php include('assets/logo_no_text.svg'); ?>
+        					<h2 class="site-title">Embrace<br>Families</h2>
+        				</a>
 					</div>
 					<div class="col-sm-6">
 						<nav class="footer-nav">

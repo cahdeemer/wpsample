@@ -26,18 +26,11 @@
 
 	<header id="masthead" class="site-header">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif; ?>
+		<div class="site-branding">	
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-link">
+         <?php include('assets/logo_no_text.svg'); ?>
+         <h1 class="site-title">Embrace<br>Families</h1>
+        </a>
 		</div><!-- .site-branding -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<div class="jumbotron jumbotron-fluid">
+	<div class="jumbotron jumbotron-fluid" style="background: center / cover no-repeat linear-gradient(170deg, rgba(134,188,218,0.6), rgba(235,194,29,0.4)), url('<?php echo get_template_directory_uri(); ?>/assets/park.jpg') center;">
 			<div class="container">
 				<p class="lead"><?php the_date(); ?></p>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
