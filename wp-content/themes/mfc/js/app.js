@@ -1,1 +1,480 @@
-!function(t){wp.customize("blogname",function(e){e.bind(function(e){t(".site-title a").text(e)})}),wp.customize("blogdescription",function(e){e.bind(function(e){t(".site-description").text(e)})}),wp.customize("header_textcolor",function(e){e.bind(function(e){"blank"===e?t(".site-title, .site-description").css({clip:"rect(1px, 1px, 1px, 1px)",position:"absolute"}):(t(".site-title, .site-description").css({clip:"auto",position:"relative"}),t(".site-title a, .site-description").css({color:e}))})})}(jQuery),function(){var s,e,t,n,a,i;if((s=document.getElementById("site-navigation"))&&void 0!==(e=s.getElementsByTagName("button")[0]))if(void 0!==(t=s.getElementsByTagName("ul")[0])){for(t.setAttribute("aria-expanded","false"),-1===t.className.indexOf("nav-menu")&&(t.className+=" nav-menu"),e.onclick=function(){-1!==s.className.indexOf("toggled")?(s.className=s.className.replace(" toggled",""),e.setAttribute("aria-expanded","false"),t.setAttribute("aria-expanded","false")):(s.className+=" toggled",e.setAttribute("aria-expanded","true"),t.setAttribute("aria-expanded","true"))},a=0,i=(n=t.getElementsByTagName("a")).length;a<i;a++)n[a].addEventListener("focus",o,!0),n[a].addEventListener("blur",o,!0);!function(e){var t,n,a=s.querySelectorAll(".menu-item-has-children > a, .page_item_has_children > a");if("ontouchstart"in window)for(t=function(e){var t,n=this.parentNode;if(n.classList.contains("focus"))n.classList.remove("focus");else{for(e.preventDefault(),t=0;t<n.parentNode.children.length;++t)n!==n.parentNode.children[t]&&n.parentNode.children[t].classList.remove("focus");n.classList.add("focus")}},n=0;n<a.length;++n)a[n].addEventListener("touchstart",t,!1)}()}else e.style.display="none";function o(){for(var e=this;-1===e.className.indexOf("nav-menu");)"li"===e.tagName.toLowerCase()&&(-1!==e.className.indexOf("focus")?e.className=e.className.replace(" focus",""):e.className+=" focus"),e=e.parentElement}}(),/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1),function(t){wp.customize("blogname",function(e){e.bind(function(e){t(".site-title a").text(e)})}),wp.customize("blogdescription",function(e){e.bind(function(e){t(".site-description").text(e)})}),wp.customize("header_textcolor",function(e){e.bind(function(e){"blank"===e?t(".site-title, .site-description").css({clip:"rect(1px, 1px, 1px, 1px)",position:"absolute"}):(t(".site-title, .site-description").css({clip:"auto",position:"relative"}),t(".site-title a, .site-description").css({color:e}))})})}(jQuery),function(){var s,e,t,n,a,i;if((s=document.getElementById("site-navigation"))&&void 0!==(e=s.getElementsByTagName("button")[0]))if(void 0!==(t=s.getElementsByTagName("ul")[0])){for(t.setAttribute("aria-expanded","false"),-1===t.className.indexOf("nav-menu")&&(t.className+=" nav-menu"),e.onclick=function(){-1!==s.className.indexOf("toggled")?(s.className=s.className.replace(" toggled",""),e.setAttribute("aria-expanded","false"),t.setAttribute("aria-expanded","false")):(s.className+=" toggled",e.setAttribute("aria-expanded","true"),t.setAttribute("aria-expanded","true"))},a=0,i=(n=t.getElementsByTagName("a")).length;a<i;a++)n[a].addEventListener("focus",o,!0),n[a].addEventListener("blur",o,!0);!function(e){var t,n,a=s.querySelectorAll(".menu-item-has-children > a, .page_item_has_children > a");if("ontouchstart"in window)for(t=function(e){var t,n=this.parentNode;if(n.classList.contains("focus"))n.classList.remove("focus");else{for(e.preventDefault(),t=0;t<n.parentNode.children.length;++t)n!==n.parentNode.children[t]&&n.parentNode.children[t].classList.remove("focus");n.classList.add("focus")}},n=0;n<a.length;++n)a[n].addEventListener("touchstart",t,!1)}()}else e.style.display="none";function o(){for(var e=this;-1===e.className.indexOf("nav-menu");)"li"===e.tagName.toLowerCase()&&(-1!==e.className.indexOf("focus")?e.className=e.className.replace(" focus",""):e.className+=" focus"),e=e.parentElement}}(),/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1),function(t){wp.customize("blogname",function(e){e.bind(function(e){t(".site-title a").text(e)})}),wp.customize("blogdescription",function(e){e.bind(function(e){t(".site-description").text(e)})}),wp.customize("header_textcolor",function(e){e.bind(function(e){"blank"===e?t(".site-title, .site-description").css({clip:"rect(1px, 1px, 1px, 1px)",position:"absolute"}):(t(".site-title, .site-description").css({clip:"auto",position:"relative"}),t(".site-title a, .site-description").css({color:e}))})})}(jQuery),function(){var s,e,t,n,a,i;if((s=document.getElementById("site-navigation"))&&void 0!==(e=s.getElementsByTagName("button")[0]))if(void 0!==(t=s.getElementsByTagName("ul")[0])){for(t.setAttribute("aria-expanded","false"),-1===t.className.indexOf("nav-menu")&&(t.className+=" nav-menu"),e.onclick=function(){-1!==s.className.indexOf("toggled")?(s.className=s.className.replace(" toggled",""),e.setAttribute("aria-expanded","false"),t.setAttribute("aria-expanded","false")):(s.className+=" toggled",e.setAttribute("aria-expanded","true"),t.setAttribute("aria-expanded","true"))},a=0,i=(n=t.getElementsByTagName("a")).length;a<i;a++)n[a].addEventListener("focus",o,!0),n[a].addEventListener("blur",o,!0);!function(e){var t,n,a=s.querySelectorAll(".menu-item-has-children > a, .page_item_has_children > a");if("ontouchstart"in window)for(t=function(e){var t,n=this.parentNode;if(n.classList.contains("focus"))n.classList.remove("focus");else{for(e.preventDefault(),t=0;t<n.parentNode.children.length;++t)n!==n.parentNode.children[t]&&n.parentNode.children[t].classList.remove("focus");n.classList.add("focus")}},n=0;n<a.length;++n)a[n].addEventListener("touchstart",t,!1)}()}else e.style.display="none";function o(){for(var e=this;-1===e.className.indexOf("nav-menu");)"li"===e.tagName.toLowerCase()&&(-1!==e.className.indexOf("focus")?e.className=e.className.replace(" focus",""):e.className+=" focus"),e=e.parentElement}}(),/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1),function(t){wp.customize("blogname",function(e){e.bind(function(e){t(".site-title a").text(e)})}),wp.customize("blogdescription",function(e){e.bind(function(e){t(".site-description").text(e)})}),wp.customize("header_textcolor",function(e){e.bind(function(e){"blank"===e?t(".site-title, .site-description").css({clip:"rect(1px, 1px, 1px, 1px)",position:"absolute"}):(t(".site-title, .site-description").css({clip:"auto",position:"relative"}),t(".site-title a, .site-description").css({color:e}))})})}(jQuery),function(){var s,e,t,n,a,i;if((s=document.getElementById("site-navigation"))&&void 0!==(e=s.getElementsByTagName("button")[0]))if(void 0!==(t=s.getElementsByTagName("ul")[0])){for(t.setAttribute("aria-expanded","false"),-1===t.className.indexOf("nav-menu")&&(t.className+=" nav-menu"),e.onclick=function(){-1!==s.className.indexOf("toggled")?(s.className=s.className.replace(" toggled",""),e.setAttribute("aria-expanded","false"),t.setAttribute("aria-expanded","false")):(s.className+=" toggled",e.setAttribute("aria-expanded","true"),t.setAttribute("aria-expanded","true"))},a=0,i=(n=t.getElementsByTagName("a")).length;a<i;a++)n[a].addEventListener("focus",o,!0),n[a].addEventListener("blur",o,!0);!function(e){var t,n,a=s.querySelectorAll(".menu-item-has-children > a, .page_item_has_children > a");if("ontouchstart"in window)for(t=function(e){var t,n=this.parentNode;if(n.classList.contains("focus"))n.classList.remove("focus");else{for(e.preventDefault(),t=0;t<n.parentNode.children.length;++t)n!==n.parentNode.children[t]&&n.parentNode.children[t].classList.remove("focus");n.classList.add("focus")}},n=0;n<a.length;++n)a[n].addEventListener("touchstart",t,!1)}()}else e.style.display="none";function o(){for(var e=this;-1===e.className.indexOf("nav-menu");)"li"===e.tagName.toLowerCase()&&(-1!==e.className.indexOf("focus")?e.className=e.className.replace(" focus",""):e.className+=" focus"),e=e.parentElement}}(),/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1);
+
+/**
+ * File myapi.js
+ *
+ * This is where i have my api call.
+ *
+ */
+
+
+var app = new Vue({
+    el: '#my-api-div',
+    data () {
+      return {
+        posts: []
+      }
+    },
+    mounted () {
+      axios
+        .get('https://jsonplaceholder.typicode.com/posts?userId=2')
+        .then(response => (this.posts = response.data))
+    }
+  })
+/**
+ * File navigation.js.
+ *
+ * Handles toggling the navigation menu for small screens and enables TAB key
+ * navigation support for dropdown menus.
+ */
+( function() {
+	var container, button, menu, links, i, len;
+
+	container = document.getElementById( 'site-navigation' );
+	if ( ! container ) {
+		return;
+	}
+
+	button = container.getElementsByTagName( 'button' )[0];
+	if ( 'undefined' === typeof button ) {
+		return;
+	}
+
+	menu = container.getElementsByTagName( 'ul' )[0];
+
+	// Hide menu toggle button if menu is empty and return early.
+	if ( 'undefined' === typeof menu ) {
+		button.style.display = 'none';
+		return;
+	}
+
+	menu.setAttribute( 'aria-expanded', 'false' );
+	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+		menu.className += ' nav-menu';
+	}
+
+	button.onclick = function() {
+		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+			container.className = container.className.replace( ' toggled', '' );
+			button.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
+		} else {
+			container.className += ' toggled';
+			button.setAttribute( 'aria-expanded', 'true' );
+			menu.setAttribute( 'aria-expanded', 'true' );
+		}
+	};
+
+	// Get all the link elements within the menu.
+	links    = menu.getElementsByTagName( 'a' );
+
+	// Each time a menu link is focused or blurred, toggle focus.
+	for ( i = 0, len = links.length; i < len; i++ ) {
+		links[i].addEventListener( 'focus', toggleFocus, true );
+		links[i].addEventListener( 'blur', toggleFocus, true );
+	}
+
+	/**
+	 * Sets or removes .focus class on an element.
+	 */
+	function toggleFocus() {
+		var self = this;
+
+		// Move up through the ancestors of the current link until we hit .nav-menu.
+		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+
+			// On li elements toggle the class .focus.
+			if ( 'li' === self.tagName.toLowerCase() ) {
+				if ( -1 !== self.className.indexOf( 'focus' ) ) {
+					self.className = self.className.replace( ' focus', '' );
+				} else {
+					self.className += ' focus';
+				}
+			}
+
+			self = self.parentElement;
+		}
+	}
+
+	/**
+	 * Toggles `focus` class to allow submenu access on tablets.
+	 */
+	( function( container ) {
+		var touchStartFn, i,
+			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+
+		if ( 'ontouchstart' in window ) {
+			touchStartFn = function( e ) {
+				var menuItem = this.parentNode, i;
+
+				if ( ! menuItem.classList.contains( 'focus' ) ) {
+					e.preventDefault();
+					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+						if ( menuItem === menuItem.parentNode.children[i] ) {
+							continue;
+						}
+						menuItem.parentNode.children[i].classList.remove( 'focus' );
+					}
+					menuItem.classList.add( 'focus' );
+				} else {
+					menuItem.classList.remove( 'focus' );
+				}
+			};
+
+			for ( i = 0; i < parentLink.length; ++i ) {
+				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
+			}
+		}
+	}( container ) );
+} )();
+
+/**
+ * File skip-link-focus-fix.js.
+ *
+ * Helps with accessibility for keyboard only users.
+ *
+ * Learn more: https://git.io/vWdr2
+ */
+( function() {
+	var isIe = /(trident|msie)/i.test( navigator.userAgent );
+
+	if ( isIe && document.getElementById && window.addEventListener ) {
+		window.addEventListener( 'hashchange', function() {
+			var id = location.hash.substring( 1 ),
+				element;
+
+			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+				return;
+			}
+
+			element = document.getElementById( id );
+
+			if ( element ) {
+				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+					element.tabIndex = -1;
+				}
+
+				element.focus();
+			}
+		}, false );
+	}
+} )();
+
+/**
+ * File myapi.js
+ *
+ * This is where i have my api call.
+ *
+ */
+
+
+var app = new Vue({
+    el: '#my-api-div',
+    data () {
+      return {
+        posts: []
+      }
+    },
+    mounted () {
+      axios
+        .get('https://jsonplaceholder.typicode.com/posts?userId=2')
+        .then(response => (this.posts = response.data))
+    }
+  })
+/**
+ * File navigation.js.
+ *
+ * Handles toggling the navigation menu for small screens and enables TAB key
+ * navigation support for dropdown menus.
+ */
+( function() {
+	var container, button, menu, links, i, len;
+
+	container = document.getElementById( 'site-navigation' );
+	if ( ! container ) {
+		return;
+	}
+
+	button = container.getElementsByTagName( 'button' )[0];
+	if ( 'undefined' === typeof button ) {
+		return;
+	}
+
+	menu = container.getElementsByTagName( 'ul' )[0];
+
+	// Hide menu toggle button if menu is empty and return early.
+	if ( 'undefined' === typeof menu ) {
+		button.style.display = 'none';
+		return;
+	}
+
+	menu.setAttribute( 'aria-expanded', 'false' );
+	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+		menu.className += ' nav-menu';
+	}
+
+	button.onclick = function() {
+		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+			container.className = container.className.replace( ' toggled', '' );
+			button.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
+		} else {
+			container.className += ' toggled';
+			button.setAttribute( 'aria-expanded', 'true' );
+			menu.setAttribute( 'aria-expanded', 'true' );
+		}
+	};
+
+	// Get all the link elements within the menu.
+	links    = menu.getElementsByTagName( 'a' );
+
+	// Each time a menu link is focused or blurred, toggle focus.
+	for ( i = 0, len = links.length; i < len; i++ ) {
+		links[i].addEventListener( 'focus', toggleFocus, true );
+		links[i].addEventListener( 'blur', toggleFocus, true );
+	}
+
+	/**
+	 * Sets or removes .focus class on an element.
+	 */
+	function toggleFocus() {
+		var self = this;
+
+		// Move up through the ancestors of the current link until we hit .nav-menu.
+		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+
+			// On li elements toggle the class .focus.
+			if ( 'li' === self.tagName.toLowerCase() ) {
+				if ( -1 !== self.className.indexOf( 'focus' ) ) {
+					self.className = self.className.replace( ' focus', '' );
+				} else {
+					self.className += ' focus';
+				}
+			}
+
+			self = self.parentElement;
+		}
+	}
+
+	/**
+	 * Toggles `focus` class to allow submenu access on tablets.
+	 */
+	( function( container ) {
+		var touchStartFn, i,
+			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+
+		if ( 'ontouchstart' in window ) {
+			touchStartFn = function( e ) {
+				var menuItem = this.parentNode, i;
+
+				if ( ! menuItem.classList.contains( 'focus' ) ) {
+					e.preventDefault();
+					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+						if ( menuItem === menuItem.parentNode.children[i] ) {
+							continue;
+						}
+						menuItem.parentNode.children[i].classList.remove( 'focus' );
+					}
+					menuItem.classList.add( 'focus' );
+				} else {
+					menuItem.classList.remove( 'focus' );
+				}
+			};
+
+			for ( i = 0; i < parentLink.length; ++i ) {
+				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
+			}
+		}
+	}( container ) );
+} )();
+
+/**
+ * File skip-link-focus-fix.js.
+ *
+ * Helps with accessibility for keyboard only users.
+ *
+ * Learn more: https://git.io/vWdr2
+ */
+( function() {
+	var isIe = /(trident|msie)/i.test( navigator.userAgent );
+
+	if ( isIe && document.getElementById && window.addEventListener ) {
+		window.addEventListener( 'hashchange', function() {
+			var id = location.hash.substring( 1 ),
+				element;
+
+			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+				return;
+			}
+
+			element = document.getElementById( id );
+
+			if ( element ) {
+				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+					element.tabIndex = -1;
+				}
+
+				element.focus();
+			}
+		}, false );
+	}
+} )();
+
+/**
+ * File myapi.js
+ *
+ * This is where i have my api call.
+ *
+ */
+
+
+var app = new Vue({
+    el: '#my-api-div',
+    data () {
+      return {
+        posts: []
+      }
+    },
+    mounted () {
+      axios
+        .get('https://jsonplaceholder.typicode.com/posts?userId=2')
+        .then(response => (this.posts = response.data))
+    }
+  })
+/**
+ * File navigation.js.
+ *
+ * Handles toggling the navigation menu for small screens and enables TAB key
+ * navigation support for dropdown menus.
+ */
+( function() {
+	var container, button, menu, links, i, len;
+
+	container = document.getElementById( 'site-navigation' );
+	if ( ! container ) {
+		return;
+	}
+
+	button = container.getElementsByTagName( 'button' )[0];
+	if ( 'undefined' === typeof button ) {
+		return;
+	}
+
+	menu = container.getElementsByTagName( 'ul' )[0];
+
+	// Hide menu toggle button if menu is empty and return early.
+	if ( 'undefined' === typeof menu ) {
+		button.style.display = 'none';
+		return;
+	}
+
+	menu.setAttribute( 'aria-expanded', 'false' );
+	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+		menu.className += ' nav-menu';
+	}
+
+	button.onclick = function() {
+		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+			container.className = container.className.replace( ' toggled', '' );
+			button.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
+		} else {
+			container.className += ' toggled';
+			button.setAttribute( 'aria-expanded', 'true' );
+			menu.setAttribute( 'aria-expanded', 'true' );
+		}
+	};
+
+	// Get all the link elements within the menu.
+	links    = menu.getElementsByTagName( 'a' );
+
+	// Each time a menu link is focused or blurred, toggle focus.
+	for ( i = 0, len = links.length; i < len; i++ ) {
+		links[i].addEventListener( 'focus', toggleFocus, true );
+		links[i].addEventListener( 'blur', toggleFocus, true );
+	}
+
+	/**
+	 * Sets or removes .focus class on an element.
+	 */
+	function toggleFocus() {
+		var self = this;
+
+		// Move up through the ancestors of the current link until we hit .nav-menu.
+		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+
+			// On li elements toggle the class .focus.
+			if ( 'li' === self.tagName.toLowerCase() ) {
+				if ( -1 !== self.className.indexOf( 'focus' ) ) {
+					self.className = self.className.replace( ' focus', '' );
+				} else {
+					self.className += ' focus';
+				}
+			}
+
+			self = self.parentElement;
+		}
+	}
+
+	/**
+	 * Toggles `focus` class to allow submenu access on tablets.
+	 */
+	( function( container ) {
+		var touchStartFn, i,
+			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+
+		if ( 'ontouchstart' in window ) {
+			touchStartFn = function( e ) {
+				var menuItem = this.parentNode, i;
+
+				if ( ! menuItem.classList.contains( 'focus' ) ) {
+					e.preventDefault();
+					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+						if ( menuItem === menuItem.parentNode.children[i] ) {
+							continue;
+						}
+						menuItem.parentNode.children[i].classList.remove( 'focus' );
+					}
+					menuItem.classList.add( 'focus' );
+				} else {
+					menuItem.classList.remove( 'focus' );
+				}
+			};
+
+			for ( i = 0; i < parentLink.length; ++i ) {
+				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
+			}
+		}
+	}( container ) );
+} )();
+
+/**
+ * File skip-link-focus-fix.js.
+ *
+ * Helps with accessibility for keyboard only users.
+ *
+ * Learn more: https://git.io/vWdr2
+ */
+( function() {
+	var isIe = /(trident|msie)/i.test( navigator.userAgent );
+
+	if ( isIe && document.getElementById && window.addEventListener ) {
+		window.addEventListener( 'hashchange', function() {
+			var id = location.hash.substring( 1 ),
+				element;
+
+			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+				return;
+			}
+
+			element = document.getElementById( id );
+
+			if ( element ) {
+				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+					element.tabIndex = -1;
+				}
+
+				element.focus();
+			}
+		}, false );
+	}
+} )();

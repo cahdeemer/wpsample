@@ -124,6 +124,10 @@ function mfc_scripts() {
 
 	wp_enqueue_style( 'mfc-style', get_stylesheet_uri() );
 
+	wp_enqueue_script('axios', 'https://unpkg.com/axios/dist/axios.min.js',  array(), '', true);
+
+	wp_enqueue_script('vue-js', 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js',  array(), '2.5.17', true);
+
 	wp_enqueue_script('bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.js',  array('jquery'), '4.1.3', true);
 
 	wp_enqueue_script( 'gulp-wordpress-javascript', get_template_directory_uri() . '/js/app.js', array(), '20151215', true );
