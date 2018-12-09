@@ -22,7 +22,7 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		<section class="container-fluid">
+		<section class="container-fluid extra-padding">
 		<?php
 		/* 
 		*
@@ -32,7 +32,7 @@ get_header();
 		?>
 			<div id="my-api-div" class="row">
 				<div class="col-sm-10 offset-sm-1">
-					<h2>Related posts</h2>
+					<h2 class="centered">Related posts</h2>
 					<div class="card-wrapper">
 						<div v-for="(post, index) in posts" :key="post.id" class="card col-sm-4" v-if="index < 3">
 							<div>

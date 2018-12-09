@@ -760,7 +760,8 @@ a {
 --------------------------------------------------------------*/
 .jumbotron {
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  min-height: 400px; }
 
 /*--------------------------------------------------------------
 # Cards
@@ -892,6 +893,9 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0; }
+
+.entry-content {
+  margin: 1.5em -15px; }
 
 .page-links {
   clear: both;
