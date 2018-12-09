@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
 			<section class="container-fluid bright-bkgr centered">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-md-12">
 						<button class="btn btn-hero">donate</button>
 					</div>
 				</div>
@@ -36,13 +36,13 @@
 			</section>
 			<section class="container-fluid site-info">
 				<div class="row">
-					<div class="col-sm-3 flex-container flex-center">
+					<div class="col-md-3 col-sm-12 flex-container flex-center">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-link">
          					<?php include('assets/logo_no_text.svg'); ?>
         					<h2 class="site-title">Embrace<br>Families</h2>
         				</a>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<nav class="footer-nav">
 							<ul>
 								<li><a href="#">About</a></li>
@@ -57,7 +57,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-sm-3 flex-container flex-center">
+					<div class="col-md-3 col-sm-12 flex-container flex-center">
 						<a href="#">Contact Us</a>
 					</div>
 				</div><!-- .row -->

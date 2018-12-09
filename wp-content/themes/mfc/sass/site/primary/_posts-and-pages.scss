@@ -40,55 +40,6 @@
 	display: inline-grid;
 }
 
-.circle-img {
-	height: $size__circle-diameter;
-	width: $size__circle-diameter;
-	//display: inline-block;
-	border-radius: 50%;
-	background-color: $color__background-button;
-	color: $color__background-body;
-	font-size: 3rem;
-}
-
-.circle-container {
-	position: relative;
-	top: 200px;
-	height: 30vw;
-	width: 30vw;
-	display: flex;
-	margin: 10px;
-    border-radius: 50%;
-    border: 1px dashed grey;
-}
-
-.circle-1 {
-	position: absolute;
-    left: calc(50% - #{$size__circle-radius});
-    top: -#{$size__circle-radius};
-	background-color: $color__primary-dark;
-}
-
-.circle-2 {
-	position: absolute;
-    left: -#{$size__circle-radius};
-    top: calc(50% - #{$size__circle-radius});
-	background-color: $color__primary-light;
-}
-
-.circle-3 {
-	position: absolute;
-    right: -#{$size__circle-radius};
-    top: calc(50% - #{$size__circle-radius});
-	background-color: $color__secondary-bright;
-}
-
-.circle-4 {
-	position: absolute;
-    top: calc(100% - #{$size__circle-radius});
-    left: calc(50% - #{$size__circle-radius});
-	background-color: $color__secondary-light;
-}
-
 .primary-dark-bkgr {
 	background-color: $color__primary-dark;
 }
@@ -144,4 +95,30 @@
 			font-size: 12px;
 		}
 	}
+}
+
+/* Media Queries */
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	.flex-container {
+		flex-direction: column;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	.row > .col-sm-10,
+	.row > .col-sm-12 {
+		margin-bottom: 40px;
+	}
+
+	.col-sm-10.border-right {
+		border: none !important;
+	} 
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	
 }

@@ -34,6 +34,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Clearings
 # Jumbotron
 # Cards
+# Circles
 # Widgets
 # Content
 	## Posts and pages
@@ -44,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+/* Because you can't change the value of a variable in a media query, we have multiple widths for the cicle diameters and multiple calculations for the radius */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -365,6 +367,19 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+/* Media Queries */
+@media (max-width: 349.98px) {
+  .display-4 {
+    font-size: 2em; } }
+
+@media (max-width: 575.98px) {
+  .display-4 {
+    font-size: 3em; } }
+
+@media (max-width: 767.98px) {
+  .display-4 {
+    font-size: 3em; } }
+
 p {
   margin-top: 1em;
   margin-bottom: 1.5em; }
@@ -412,6 +427,10 @@ big {
 .centered {
   margin-bottom: 40px;
   text-align: center; }
+
+@media (max-width: 991.98px) {
+  .slim-p {
+    width: initial; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -634,6 +653,11 @@ input[type="submit"],
     color: orange;
     outline: 5px auto white; }
 
+@media (max-width: 576.98px) {
+  .btn {
+    width: 100%;
+    font-size: 1em; } }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -680,6 +704,11 @@ select {
 
 textarea {
   width: 100%; }
+
+@media (max-width: 576.98px) {
+  input[type="text"] {
+    width: 100%;
+    font-size: 1em; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -821,7 +850,13 @@ a {
   .navbar-light .navbar-nav .show > .nav-link::after {
     display: none; }
   .dropdown-menu {
-    box-shadow: none; } }
+    box-shadow: none; }
+  .footer-nav ul {
+    display: initial; }
+    .footer-nav ul li {
+      display: block;
+      margin: 20px;
+      text-align: center; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -888,6 +923,11 @@ a {
 .text-alignright {
   text-align: right; }
 
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .text-alignright {
+    text-align: initial; } }
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -923,6 +963,7 @@ a {
   background-position: center;
   min-height: 400px; }
 
+/* Media Queries */
 /*--------------------------------------------------------------
 # Cards
 --------------------------------------------------------------*/
@@ -937,6 +978,121 @@ a {
     padding-left: 0px; }
   .card:last-child {
     padding-right: 0px; }
+
+/*--------------------------------------------------------------
+# Circles
+--------------------------------------------------------------*/
+.circle-img {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  color: #fff;
+  font-size: 3rem; }
+
+.circle-container {
+  position: relative;
+  top: 200px;
+  height: 30vw;
+  width: 30vw;
+  display: flex;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px dashed grey; }
+
+.circle-1 {
+  position: absolute;
+  left: calc(50% - 5vw);
+  top: -5vw;
+  background-color: #092735; }
+
+.circle-2 {
+  position: absolute;
+  left: -5vw;
+  top: calc(50% - 5vw);
+  background-color: #7F9CAE; }
+
+.circle-3 {
+  position: absolute;
+  right: -5vw;
+  top: calc(50% - 5vw);
+  background-color: #05A0AE; }
+
+.circle-4 {
+  position: absolute;
+  top: calc(100% - 5vw);
+  left: calc(50% - 5vw);
+  background-color: #85BCDA; }
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .circle-img {
+    height: 20vw;
+    width: 20vw; }
+  .circle-1 {
+    left: calc(50% - 10vw);
+    top: -10vw; }
+  .circle-2 {
+    left: -10vw;
+    top: calc(50% - 10vw); }
+  .circle-3 {
+    right: -10vw;
+    top: calc(50% - 10vw); }
+  .circle-4 {
+    top: calc(100% - 10vw);
+    left: calc(50% - 10vw); }
+  .circle-container {
+    top: 15vw;
+    height: 50vw;
+    width: 50vw;
+    left: 11vw;
+    margin-bottom: 30vw; } }
+
+@media (max-width: 575.98px) {
+  .circle-img {
+    height: 25vw;
+    width: 25vw; }
+  .circle-1 {
+    left: calc(50% - 12.5vw);
+    top: -12.5vw; }
+  .circle-2 {
+    left: -12.5vw;
+    top: calc(50% - 12.5vw); }
+  .circle-3 {
+    right: -12.5vw;
+    top: calc(50% - 12.5vw); }
+  .circle-4 {
+    top: calc(100% - 12.5vw);
+    left: calc(50% - 12.5vw); }
+  .circle-container {
+    left: 11vw; } }
+
+@media (max-width: 500.98px) {
+  .circle-img {
+    height: 40vw;
+    width: 40vw; }
+  .circle-1 {
+    height: 25vw;
+    width: 25vw;
+    left: calc(50% - 12.5vw);
+    top: -12.5vw; }
+  .circle-2 {
+    height: 25vw;
+    width: 25vw;
+    left: -12.5vw;
+    top: calc(50% - 12.5vw); }
+  .circle-3 {
+    height: 25vw;
+    width: 25vw;
+    right: -12.5vw;
+    top: calc(50% - 12.5vw); }
+  .circle-4 {
+    height: 25vw;
+    width: 25vw;
+    top: calc(100% - 12.5vw);
+    left: calc(50% - 12.5vw); }
+  .circle-container {
+    left: 15vw; } }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -985,48 +1141,6 @@ a {
 .inline-grid {
   display: inline-grid; }
 
-.circle-img {
-  height: 10vw;
-  width: 10vw;
-  border-radius: 50%;
-  background-color: #e6e6e6;
-  color: #fff;
-  font-size: 3rem; }
-
-.circle-container {
-  position: relative;
-  top: 200px;
-  height: 30vw;
-  width: 30vw;
-  display: flex;
-  margin: 10px;
-  border-radius: 50%;
-  border: 1px dashed grey; }
-
-.circle-1 {
-  position: absolute;
-  left: calc(50% - 5vw);
-  top: -5vw;
-  background-color: #092735; }
-
-.circle-2 {
-  position: absolute;
-  left: -5vw;
-  top: calc(50% - 5vw);
-  background-color: #7F9CAE; }
-
-.circle-3 {
-  position: absolute;
-  right: -5vw;
-  top: calc(50% - 5vw);
-  background-color: #05A0AE; }
-
-.circle-4 {
-  position: absolute;
-  top: calc(100% - 5vw);
-  left: calc(50% - 5vw);
-  background-color: #85BCDA; }
-
 .primary-dark-bkgr {
   background-color: #092735; }
 
@@ -1068,6 +1182,18 @@ a {
   color: grey;
   letter-spacing: 1px;
   font-size: 12px; }
+
+/* Media Queries */
+@media (max-width: 575.98px) {
+  .flex-container {
+    flex-direction: column; } }
+
+@media (max-width: 767.98px) {
+  .row > .col-sm-10,
+  .row > .col-sm-12 {
+    margin-bottom: 40px; }
+  .col-sm-10.border-right {
+    border: none !important; } }
 
 /*--------------------------------------------------------------
 ## Comments

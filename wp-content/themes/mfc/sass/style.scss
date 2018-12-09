@@ -35,6 +35,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Clearings
 # Jumbotron
 # Cards
+# Circles
 # Widgets
 # Content
 	## Posts and pages
@@ -96,6 +97,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Cards
 --------------------------------------------------------------*/
 @import "layout/cards";
+
+/*--------------------------------------------------------------
+# Circles
+--------------------------------------------------------------*/
+@import "layout/circles";
 
 /*--------------------------------------------------------------
 # Widgets

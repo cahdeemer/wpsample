@@ -148,7 +148,7 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
-
+	
 }
 
 // Medium devices (tablets, less than 992px)
@@ -163,5 +163,17 @@
 	.dropdown-menu {
 		box-shadow: none;
 	}
+	.footer-nav {
+		ul {
+			display: initial;
+			li {
+				display: block;
+				margin: 20px;
+				text-align: center;
+			}
+		}
+		
+	}
+
 
 }
