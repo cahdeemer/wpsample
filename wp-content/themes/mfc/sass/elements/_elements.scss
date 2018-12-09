@@ -12,6 +12,11 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+section {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
 hr {
 	background-color: $color__background-hr;
 	border: 0;

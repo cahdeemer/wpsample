@@ -14,23 +14,47 @@
 	justify-content: space-between;
 }
 
+.flex-column {
+	flex-direction: column;
+}
+
 .flex-item {
 	flex: 1;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom-border {
+	border-bottom: 1px solid $color__background-hr;
+}
+
+.extra-padding {
+	padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.inline-grid {
+	display: inline-grid;
 }
 
 .circle-img {
 	height: $size__circle-diameter;
 	width: $size__circle-diameter;
-	display: inline-block;
+	//display: inline-block;
 	border-radius: 50%;
 	background-color: $color__background-button;
+	color: $color__background-body;
+	font-size: 3rem;
 }
 
 .circle-container {
 	position: relative;
-	top: 50px;
-	height: 400px;
-	width: 400px;
+	top: 200px;
+	height: 30vw;
+	width: 30vw;
 	display: flex;
 	margin: 10px;
     border-radius: 50%;
@@ -41,28 +65,48 @@
 	position: absolute;
     left: calc(50% - #{$size__circle-radius});
     top: -#{$size__circle-radius};
-	background-color: orange;
+	background-color: $color__primary-dark;
 }
 
 .circle-2 {
 	position: absolute;
     left: -#{$size__circle-radius};
     top: calc(50% - #{$size__circle-radius});
-	background-color: blue;
+	background-color: $color__primary-light;
 }
 
 .circle-3 {
 	position: absolute;
     right: -#{$size__circle-radius};
     top: calc(50% - #{$size__circle-radius});
-	background-color: green;
+	background-color: $color__secondary-bright;
 }
 
 .circle-4 {
 	position: absolute;
     top: calc(100% - #{$size__circle-radius});
     left: calc(50% - #{$size__circle-radius});
-	background-color: red;
+	background-color: $color__secondary-light;
+}
+
+.primary-dark-bkgr {
+	background-color: $color__primary-dark;
+}
+
+.primary-light-bkgr {
+	background-color: $color__primary-light;
+}
+
+.secondary-light-bkgr {
+	background-color: $color__secondary-light;
+}
+
+.bright-bkgr {
+	background-color: $color__secondary-bright;
+}
+
+.white-bkgr {
+	background-color: $color__background-body;
 }
 
 .post,
@@ -83,4 +127,17 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.stat {
+	span {
+		&:last-child {
+			margin-top: 20px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: grey;
+			letter-spacing: 1px;
+			font-size: 12px;
+		}
+	}
 }

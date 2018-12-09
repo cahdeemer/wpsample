@@ -23,3 +23,30 @@ dt {
 dd {
 	margin: 0 1.5em 1.5em;
 }
+
+.list-group {
+	display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.list-group-item {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid grey;
+	padding: 10px 0;
+	background-color: initial;
+	a {
+		color: $color__text-main;
+		font-size: 1.15rem;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

@@ -75,7 +75,7 @@
         <a class="nav-link" href="#">News</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="#">Donate</a>
+        <a class="nav-link" href="#" id="nav-donate">Donate</a>
       </li>
     </ul>
   </div>

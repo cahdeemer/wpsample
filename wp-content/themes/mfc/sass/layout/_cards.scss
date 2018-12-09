@@ -1,0 +1,15 @@
+.card-wrapper {
+    display: flex;
+}
+
+.card {
+    &:first-child {
+        padding-left: 0px;
+    }
+    &:last-child {
+        padding-right: 0px;
+    }
+    flex: 1;
+    border: none;
+    justify-content: space-between;
+}

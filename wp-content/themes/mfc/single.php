@@ -31,12 +31,15 @@ get_header();
 		*/ 
 		?>
 			<div id="my-api-div" class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-10 offset-sm-1">
 					<h2>Related posts</h2>
 					<div class="card-wrapper">
-						<div v-for="(post, index) in posts" :key="post.id" class="card" v-if="index < 3">
-							<h3>{{ post.title}}</h3>
-							<p>{{ post.body}}</p>
+						<div v-for="(post, index) in posts" :key="post.id" class="card col-sm-4" v-if="index < 3">
+							<div>
+								<h3>{{ post.title}}</h3>
+								<p>{{ post.body}}</p>
+							</div>
+							<button class="btn">Learn More</button>
 						</div>
 					</div>
 				</div>

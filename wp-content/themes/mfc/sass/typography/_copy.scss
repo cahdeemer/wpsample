@@ -3,6 +3,11 @@ p {
 	margin-bottom: 1.5em;
 }
 
+.slim-p {
+	width: 75%;
+	font-size: 1.15rem;
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }
@@ -43,4 +48,9 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+.centered {
+	margin-bottom: 40px;
+	text-align: center;
 }
