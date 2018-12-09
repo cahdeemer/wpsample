@@ -2,13 +2,17 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+.display-4 {
+	width: 50%;
+}
 
 /* Media Queries */
 
-// Extra small devices (portrait phones, less than 350px)
+// Extra extra small devices (portrait phones, less than 350px)
 @media (max-width: 349.98px) {
 	.display-4 {
 		font-size: 2em;
+		width: 80%;
 	}
 }
 
@@ -17,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 575.98px) {
     .display-4 {
 		font-size: 3em;
+		width: 70%;
 	}
 }
 

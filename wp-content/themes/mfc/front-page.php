@@ -12,14 +12,19 @@
  */
 get_header(); ?>
 
+<?php
+    $newsImg = get_field('news_image');
+
+?>
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
         <div class="jumbotron jumbotron-fluid" style="background: center / cover no-repeat linear-gradient(rgba(245,162,47,0.6), rgba(255,255,255,0.4)), url('<?php echo get_template_directory_uri(); ?>/assets/family_flowers_bkgr.jpg') center;">
             <div class="container">
-                <button class="btn btn-hero">Give Feedback</button>
-                <h1 class="display-4">Stronger Families.<br>Stronger Communities</h1>
-                <p class="lead">Every child deserves a safe, loving, and nurturing home.</p>
+                <a href="<?php the_field('hero_button_link'); ?>" class="btn btn-hero target="_blank"><?php the_field('hero_button_text'); ?></a>
+                <h1 class="display-4"><?php the_field('tagline'); ?></h1>
+                <p class="lead"><?php the_field('hero_subtitle'); ?></p>
                 <p class="lead">Together we can make that happen.</p>
             </div>
         </div>
@@ -55,9 +60,12 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-10 col-md-4 offset-sm-1 offset-md-1">
                     <h2>What's New</h2>
+
+        
+
                     <figure class="figure callout-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/kids-playing-outside.jpg" class="figure-img img-fluid" alt="A generic square placeholder imagein a figure.">
-                        <figcaption class="figure-caption">Kids playing outside. Credit: Shutterstock.</figcaption>
+                        <img src="<?php echo $newsImg['url']; ?>" class="figure-img img-fluid" alt="<?php echo $newsImg['alt']; ?>">
+                        <figcaption class="figure-caption"><?php echo $newsImg['caption']; ?></figcaption>
                     </figure>
                     <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
                 </div>

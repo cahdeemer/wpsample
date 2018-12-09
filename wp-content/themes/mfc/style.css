@@ -367,14 +367,19 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+.display-4 {
+  width: 50%; }
+
 /* Media Queries */
 @media (max-width: 349.98px) {
   .display-4 {
-    font-size: 2em; } }
+    font-size: 2em;
+    width: 80%; } }
 
 @media (max-width: 575.98px) {
   .display-4 {
-    font-size: 3em; } }
+    font-size: 3em;
+    width: 70%; } }
 
 @media (max-width: 767.98px) {
   .display-4 {
@@ -633,6 +638,7 @@ input[type="submit"],
   border-radius: 0px;
   padding: 6px 24px;
   font-size: 1.15em;
+  color: #092735 !important;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
