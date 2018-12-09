@@ -15,7 +15,6 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch('./js/*.js', ['js']);
 });
 
 gulp.task('js', function() {
@@ -25,4 +24,4 @@ gulp.task('js', function() {
 });
 
 // default task
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'js', 'watch']);

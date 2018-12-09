@@ -164,7 +164,7 @@ get_header(); ?>
                             <div class="col-md-4 col-sm-12 flex-container flex-column flex-between">
                                 <div>
                                     <figure class="figure callout-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/mom_and_baby.jpeg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/girls_doing_homework.jpg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
                                         <figcaption class="figure-caption">A caption for the above image.</figcaption>
                                     </figure>
                                     <h3>Foster</h3>
