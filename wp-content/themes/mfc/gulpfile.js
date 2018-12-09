@@ -20,7 +20,6 @@ gulp.task('watch', function() {
 gulp.task('js', function() {
     return gulp.src(['./js/*.js'])
       .pipe(concat('app.js'))
-      .pipe(RevAll.revision())
       .pipe(gulp.dest('./js'))
 });
 
