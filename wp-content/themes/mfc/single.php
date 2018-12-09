@@ -34,7 +34,7 @@ get_header();
 				<div class="col-sm-10 offset-sm-1">
 					<h2 class="centered">Related posts</h2>
 					<div class="card-wrapper">
-						<div v-for="(post, index) in posts" :key="post.id" class="card col-sm-4" v-if="index < 3">
+						<div v-for="(post, index) in posts" :key="post.id" class="card col-md-4 col-sm-12" v-if="index < 3">
 							<div>
 								<h3>{{ post.title}}</h3>
 								<p>{{ post.body}}</p>

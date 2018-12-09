@@ -978,6 +978,14 @@ a {
     padding-left: 0px; }
   .card:last-child {
     padding-right: 0px; }
+  .card h3 {
+    text-transform: capitalize; }
+
+@media (max-width: 767.98px) {
+  .card-wrapper {
+    display: initial; }
+  .card {
+    margin-bottom: 40px; } }
 
 /*--------------------------------------------------------------
 # Circles
