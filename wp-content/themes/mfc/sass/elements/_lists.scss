@@ -49,4 +49,9 @@ dd {
 			text-decoration: none;
 		}
 	}
+	&:last-child {
+		border-bottom-right-radius: 0;
+    	border-bottom-left-radius: 0;
+	}
 }
+

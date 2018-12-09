@@ -33,7 +33,8 @@ input[type="submit"],
 .btn-secondary {
 	@include mybutton($color__secondary-orange, $color__background-body);
 	width: initial;
-	margin: 0;
+	margin: 0 auto;
+	display: block;
 	font-weight: 700;
 }
 

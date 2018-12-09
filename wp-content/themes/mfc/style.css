@@ -500,6 +500,9 @@ dd {
     font-size: 1.15rem; }
     .list-group-item a:hover {
       text-decoration: none; }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
 
 img {
   height: auto;
@@ -602,7 +605,8 @@ input[type="submit"],
   background-color: #fff;
   transition: all 0.25s ease-in-out;
   width: initial;
-  margin: 0;
+  margin: 0 auto;
+  display: block;
   font-weight: 700; }
   .btn-secondary:hover {
     background-color: #F5A22F;
@@ -1281,6 +1285,22 @@ object {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+
+@media (max-width: 1399.98px) {
+  .callout-img {
+    height: initial;
+    background: transparent;
+    box-shadow: none; } }
+
+@media (max-width: 767.98px) {
+  .callout-img {
+    height: 205px;
+    background: #dedede; } }
+
+@media (max-width: 576.98px) {
+  .callout-img {
+    height: 205px;
+    background: transparent; } }
 
 /*--------------------------------------------------------------
 ## Captions

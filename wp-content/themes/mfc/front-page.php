@@ -29,12 +29,12 @@ get_header(); ?>
                 <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1 border-right">
                     <h2>Make a Difference</h2>
                     <p class="slim-p">Mentor or volunteer. Foster or adopt. Become a partner or give financially. Your help is critical to our mission -- however you can give.</p>
-                    <button class="btn btn-secondary">Learn More</button>
+                    <button class="btn btn-primary">Learn More</button>
                 </div>
                 <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1">
                     <h2>Find Support</h2>
                     <p class="slim-p">For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
-                    <button class="btn btn-secondary">Learn More</button>
+                    <button class="btn btn-primary">Learn More</button>
                 </div>
 
             </div>
@@ -142,31 +142,37 @@ get_header(); ?>
                     <div class="col-sm-10 offset-sm-1">
                     <h2 class="centered">Get Involved</h2>
                         <div class="row">
-                            <div class="col-md-4 col-sm-12">
+                            <div class="col-md-4 col-sm-12 flex-container flex-column flex-between">
+                                <div>
                                 <figure class="figure callout-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/birthday_party.jpg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
-                                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                                </figure>
-                                <h3>Mentor</h3>
-                                <p>Mentor or volunteer. Foster or adopt. Become a partner or give financially. Your help is critical to our mission -- however you can give.</p>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/birthday_party.jpg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
+                                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                                    </figure>
+                                    <h3>Mentor</h3>
+                                    <p>Mentor or volunteer. Foster or adopt. Become a partner or give financially. Your help is critical to our mission -- however you can give.</p>
+                                </div>
                                 <button class="btn btn-secondary">Learn More</button>
                             </div>
-                            <div class="col-md-4 col-sm-12">
-                                <figure class="figure callout-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/mom_and_baby.jpeg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
-                                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                                </figure>
-                                <h3>Foster</h3>
-                                <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
+                            <div class="col-md-4 col-sm-12 flex-container flex-column flex-between">
+                                <div>
+                                    <figure class="figure callout-img">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/mom_and_baby.jpeg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
+                                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                                    </figure>
+                                    <h3>Foster</h3>
+                                    <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
+                                </div>
                                 <button class="btn btn-secondary">Learn More</button>
                             </div>
-                            <div class="col-md-4 col-sm-12">
+                            <div class="col-md-4 col-sm-12 flex-container flex-column flex-between">
+                                <div>
                                 <figure class="figure callout-img">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/moms_and_baby.jpg" class="figure-img img-fluid" alt="A generic square placeholder image in a figure.">
                                     <figcaption class="figure-caption">A caption for the above image.</figcaption>
                                 </figure>
                                 <h3>Adopt</h3>
                                 <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
+</div>
                                 <button class="btn btn-secondary">Learn More</button>
                             </div>
                         </div>
