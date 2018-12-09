@@ -1,7 +1,7 @@
 require('es6-promise').polyfill();
 
 var gulp = require('gulp');
-var sass          = require('gulp-sass');
+var sass  = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 //var uglify = require('gulp-uglify'); vue breaks uglify?
@@ -20,6 +20,7 @@ gulp.task('watch', function() {
 gulp.task('js', function() {
     return gulp.src(['./js/*.js'])
       .pipe(concat('app.js'))
+      .pipe(RevAll.revision())
       .pipe(gulp.dest('./js'))
 });
 
