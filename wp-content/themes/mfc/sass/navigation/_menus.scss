@@ -1,3 +1,5 @@
+/* Bootstrap Styles */
+
 .navbar-collapse {
 	flex-grow: initial;
 }
@@ -6,18 +8,51 @@
 	padding: 22px 1rem;
 }
 
-.footer-nav {
-	ul {
-    	display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		list-style-type: none;
-		li {
-			display: inline-block;
-			margin: 20px;
-		}
-	}
-	
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+.dropdown-menu {
+	top: 71px;
+	border-radius: 0px;
+	border: none;
+	padding: 0;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+}
+
+.dropdown-item {
+	border-bottom: 1px solid $color__background-hr;
+	padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:focus, 
+.dropdown-item:hover {
+	background-color: $color__background-hr;
+}
+
+.nav-link {
+	position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+	display: none;
+} 
+
+.navbar-light .navbar-nav .nav-link:hover::after,
+.navbar-light .navbar-nav .show>.nav-link::after {
+	content: "";
+	position: absolute;
+	left: 33%;
+	bottom: -3px;
+	display: initial;
+	width: 33%;
+	margin: 0;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+    border-bottom: 3px solid  $color__secondary-deep;
 }
 
 /* Small menu. */
@@ -56,6 +91,8 @@
 	}
 }
 
+/* Other Menu Styles */
+
 .site-link {
 	display: flex;
     justify-content: center;
@@ -80,4 +117,51 @@
 #nav-donate {
 	color: $color__link;
 	font-weight: 700;
+}
+
+.footer-nav {
+	ul {
+    	display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			margin: 20px;
+		}
+	}
+	
+}
+
+/* Mobile Menu */
+
+.navbar-light .navbar-toggler {
+	border: none;
+}
+
+/* Media Queries */
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	.navbar-nav {
+		margin: 0;
+	}  
+	.navbar-light .navbar-nav .nav-link:hover::after,
+	.navbar-light .navbar-nav .show>.nav-link::after {
+		display: none;
+	}
+	.dropdown-menu {
+		box-shadow: none;
+	}
+
 }
