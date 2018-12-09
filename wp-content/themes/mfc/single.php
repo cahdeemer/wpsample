@@ -39,7 +39,7 @@ get_header();
 								<h3>{{ post.title}}</h3>
 								<p>{{ post.body}}</p>
 							</div>
-							<button class="btn">Learn More</button>
+							<button class="btn btn-secondary">Learn More</button>
 						</div>
 					</div>
 				</div>

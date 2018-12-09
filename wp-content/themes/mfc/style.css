@@ -508,7 +508,8 @@ table {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.btn {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -521,7 +522,8 @@ input[type="submit"] {
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type="submit"]:hover,
+  .btn:hover {
     border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
@@ -529,8 +531,108 @@ input[type="submit"] {
   input[type="reset"]:active,
   input[type="reset"]:focus,
   input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type="submit"]:focus,
+  .btn:active,
+  .btn:focus {
     border-color: #aaa #bbb #bbb; }
+
+.btn-primary {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #092735;
+  border-radius: 0px;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #092735;
+  background-color: #fff;
+  transition: all 0.25s ease-in-out;
+  width: initial;
+  margin: 0;
+  padding: 10px 24px;
+  font-weight: 700; }
+  .btn-primary:hover {
+    background-color: #092735;
+    border-color: #092735;
+    color: #fff; }
+  .btn-primary:active {
+    background-color: #092735;
+    border-color: #092735;
+    color: #fff;
+    box-shadow: none; }
+  .btn-primary:focus, .btn-primary:active:focus {
+    background-color: #092735;
+    border-color: #092735;
+    color: #fff;
+    outline: 5px auto #092735; }
+  .btn-primary:visited {
+    background-color: #092735;
+    border-color: #092735; }
+
+.btn-secondary {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #F5A22F;
+  border-radius: 0px;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F5A22F;
+  background-color: #fff;
+  transition: all 0.25s ease-in-out;
+  width: initial;
+  margin: 0;
+  font-weight: 700; }
+  .btn-secondary:hover {
+    background-color: #F5A22F;
+    border-color: #F5A22F;
+    color: #fff; }
+  .btn-secondary:active {
+    background-color: #F5A22F;
+    border-color: #F5A22F;
+    color: #fff;
+    box-shadow: none; }
+  .btn-secondary:focus, .btn-secondary:active:focus {
+    background-color: #F5A22F;
+    border-color: #F5A22F;
+    color: #fff;
+    outline: 5px auto #F5A22F; }
+  .btn-secondary:visited {
+    background-color: #F5A22F;
+    border-color: #F5A22F; }
+
+.btn-hero {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #092735;
+  border-radius: 0px;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+  margin: 0;
+  padding: 10px 24px; }
+  .btn-hero:hover {
+    background-color: white;
+    border-color: white;
+    color: orange;
+    fill: orange;
+    text-decoration: none; }
+  .btn-hero:active {
+    background-color: white;
+    border-color: white;
+    color: orange;
+    box-shadow: none; }
+  .btn-hero:focus, .btn-hero:active:focus {
+    background-color: white;
+    border-color: white;
+    color: orange;
+    outline: 5px auto white; }
 
 input[type="text"],
 input[type="email"],
@@ -548,10 +650,13 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px; }
+  border-radius: 0px;
+  width: 300px;
+  height: 42px;
+  border: 2px solid #ccc #ccc #bbb;
+  padding: 10px 24px !important;
+  font-size: 1.15em !important;
+  margin: 0px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,

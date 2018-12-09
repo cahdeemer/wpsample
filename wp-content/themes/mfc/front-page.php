@@ -17,7 +17,7 @@ get_header(); ?>
 
         <div class="jumbotron jumbotron-fluid" style="background: center / cover no-repeat linear-gradient(rgba(245,162,47,0.6), rgba(255,255,255,0.4)), url('<?php echo get_template_directory_uri(); ?>/assets/family_flowers_bkgr.jpg') center;">
             <div class="container">
-                <button>Give Feedback</button>
+                <button class="btn btn-hero">Give Feedback</button>
                 <h1 class="display-4">Stronger Families.<br>Stronger Communities</h1>
                 <p class="lead">Every child deserves a safe, loving, and nurturing home.</p>
                 <p class="lead">Together we can make that happen.</p>
@@ -29,12 +29,12 @@ get_header(); ?>
                 <div class="col-sm-5 offset-sm-1 border-right">
                     <h2>Make a Difference</h2>
                     <p class="slim-p">Mentor or volunteer. Foster or adopt. Become a partner or give financially. Your help is critical to our mission -- however you can give.</p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
                 <div class="col-sm-5 offset-sm-1">
                     <h2>Find Support</h2>
                     <p class="slim-p">For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
 
             </div>
@@ -132,7 +132,7 @@ get_header(); ?>
                     </div>
                 </div><!-- .flex-container -->
                 <div class="col-sm-10 offset-sm-1 centered">
-                    <button class="btn">View our Financial Statements</button>
+                    <button class="btn btn-primary">View our Financial Statements</button>
                 </div>
             </div>
         </section>
@@ -140,6 +140,7 @@ get_header(); ?>
          <section class="container-fluid extra-padding">
             <div class="row">
                     <div class="col-sm-10 offset-sm-1">
+                    <h2 class="centered">Get Involved</h2>
                         <div class="row">
                             <div class="col-sm-4">
                                 <figure class="figure callout-img">
@@ -148,7 +149,7 @@ get_header(); ?>
                                 </figure>
                                 <h3>Mentor</h3>
                                 <p>Mentor or volunteer. Foster or adopt. Become a partner or give financially. Your help is critical to our mission -- however you can give.</p>
-                                <button class="btn">Learn More</button>
+                                <button class="btn btn-secondary">Learn More</button>
                             </div>
                             <div class="col-sm-4">
                                 <figure class="figure callout-img">
@@ -157,7 +158,7 @@ get_header(); ?>
                                 </figure>
                                 <h3>Foster</h3>
                                 <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
-                                <button class="btn">Learn More</button>
+                                <button class="btn btn-secondary">Learn More</button>
                             </div>
                             <div class="col-sm-4">
                                 <figure class="figure callout-img">
@@ -166,7 +167,7 @@ get_header(); ?>
                                 </figure>
                                 <h3>Adopt</h3>
                                 <p>For families, youth and providers already working with CBC, or caregivers and parents seeking family strengthening services, we can help you find the information, forms and support you need.</p>
-                                <button class="btn">Learn More</button>
+                                <button class="btn btn-secondary">Learn More</button>
                             </div>
                         </div>
                     </div>

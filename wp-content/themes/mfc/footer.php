@@ -17,7 +17,7 @@
 			<section class="container-fluid bright-bkgr centered">
 				<div class="row">
 					<div class="col-sm-12">
-						<button>donate</button>
+						<button class="btn btn-hero">donate</button>
 					</div>
 				</div>
 			</section>

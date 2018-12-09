@@ -1,7 +1,8 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.btn {
 	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
@@ -19,4 +20,25 @@ input[type="submit"] {
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
+}
+
+.btn-primary {
+	@include mybutton($color__primary-dark, $color__background-body);
+	width: initial;
+	margin: 0;
+	padding: 10px 24px;
+	font-weight: 700;
+}
+
+.btn-secondary {
+	@include mybutton($color__secondary-orange, $color__background-body);
+	width: initial;
+	margin: 0;
+	font-weight: 700;
+}
+
+.btn-hero {
+	@include alt-btn($color__primary-dark, white, orange);
+	margin: 0;
+	padding: 10px 24px;
 }
