@@ -1,0 +1,63 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+.btn-primary {
+	@include mybutton($color__primary-dark, $color__background-body);
+	width: initial;
+	margin: 0;
+	padding: 10px 24px;
+	font-weight: 700;
+}
+
+.btn-secondary {
+	@include mybutton($color__secondary-orange, $color__background-body);
+	width: initial;
+	margin: 0 auto;
+	display: block;
+	font-weight: 700;
+}
+
+.btn-hero {
+	@include alt-btn($color__primary-dark, white, orange);
+	margin: 0;
+	padding: 10px 24px;
+}
+
+// Extra Small devices (portrait phones, less than 580px)
+@media (max-width: 576.98px) {
+	.btn {
+		width: 100%;
+		font-size: 1em;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	
+}

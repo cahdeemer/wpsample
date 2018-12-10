@@ -1,0 +1,13 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+/* Because you can't change the value of a variable in a media query, we have multiple widths for the cicle diameters and multiple calculations for the radius */
+$size__circle-diameter: 10vw;
+$size__circleSm-diameter: 20vw;
+$size__circleXs-diameter: 25vw;
+$size__circleXxs-diameter: 40vw;
+$size__circle-radius: $size__circle-diameter / 2;
+$size__circleSm-radius: $size__circleSm-diameter / 2;
+$size__circleXs-radius: $size__circleXs-diameter / 2;
+$size__circleXxs-radius: $size__circleXxs-diameter / 2;
+

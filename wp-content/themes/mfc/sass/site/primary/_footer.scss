@@ -1,0 +1,17 @@
+.site-footer {
+    background: $color__background-button;
+}
+
+.site-info {
+    margin: 0;
+    border-top: 1px solid $color__secondary-deep;
+    padding: 40px;
+    background-color: $color__background-button;
+}
+
+footer > .centered {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 40px;
+    text-align: center;
+}

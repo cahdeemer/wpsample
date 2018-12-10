@@ -1,0 +1,38 @@
+.card-wrapper {
+    display: flex;
+}
+
+.card {
+    &:first-child {
+        padding-left: 0px;
+    }
+    &:last-child {
+        padding-right: 0px;
+    }
+    flex: 1;
+    border: none;
+    justify-content: space-between;
+    h3 {
+        text-transform: capitalize;
+    }
+}
+
+// Extra Small devices (portrait phones, less than 580px)
+@media (max-width: 576.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .card-wrapper {
+        display: initial;
+    }
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	
+}

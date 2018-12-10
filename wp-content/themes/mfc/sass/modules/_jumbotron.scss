@@ -1,0 +1,22 @@
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+/* Media Queries */
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    // all good here
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    // all good here
+}

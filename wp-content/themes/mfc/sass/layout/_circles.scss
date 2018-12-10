@@ -1,0 +1,144 @@
+
+.circle-img {
+	height: $size__circle-diameter;
+	width: $size__circle-diameter;
+	//display: inline-block;
+	border-radius: 50%;
+	background-color: $color__background-button;
+	color: $color__background-body;
+	font-size: 3rem;
+}
+
+.circle-container {
+	position: relative;
+	top: 200px;
+	height: 30vw;
+	width: 30vw;
+	display: flex;
+	margin: 10px;
+    border-radius: 50%;
+    border: 1px dashed grey;
+}
+
+.circle-1 {
+	position: absolute;
+    left: calc(50% - #{$size__circle-radius});
+    top: -#{$size__circle-radius};
+	background-color: $color__primary-dark;
+}
+
+.circle-2 {
+	position: absolute;
+    left: -#{$size__circle-radius};
+    top: calc(50% - #{$size__circle-radius});
+	background-color: $color__primary-light;
+}
+
+.circle-3 {
+	position: absolute;
+    right: -#{$size__circle-radius};
+    top: calc(50% - #{$size__circle-radius});
+	background-color: $color__secondary-bright;
+}
+
+.circle-4 {
+	position: absolute;
+    top: calc(100% - #{$size__circle-radius});
+    left: calc(50% - #{$size__circle-radius});
+	background-color: $color__secondary-light;
+}
+
+/* Media Queries */
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	.circle-img {
+		height: $size__circleSm-diameter;
+		width: $size__circleSm-diameter;
+	}
+	.circle-1 {
+		left: calc(50% - #{$size__circleSm-radius});
+		top: -#{$size__circleSm-radius};
+	}
+	.circle-2 {
+		left: -#{$size__circleSm-radius};
+		top: calc(50% - #{$size__circleSm-radius});
+	}
+	.circle-3 {
+		right: -#{$size__circleSm-radius};
+		top: calc(50% - #{$size__circleSm-radius});
+	}
+	.circle-4 {
+		top: calc(100% - #{$size__circleSm-radius});
+		left: calc(50% - #{$size__circleSm-radius});
+	}
+	.circle-container {
+		top: 15vw;
+		height: 50vw;
+		width: 50vw;
+		left: 11vw;
+		margin-bottom: 30vw;
+	}
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	.circle-img {
+		height: $size__circleXs-diameter;
+		width: $size__circleXs-diameter;
+	}
+	.circle-1 {
+		left: calc(50% - #{$size__circleXs-radius});
+		top: -#{$size__circleXs-radius};
+	}
+	.circle-2 {
+		left: -#{$size__circleXs-radius};
+		top: calc(50% - #{$size__circleXs-radius});
+	}
+	.circle-3 {
+		right: -#{$size__circleXs-radius};
+		top: calc(50% - #{$size__circleXs-radius});
+	}
+	.circle-4 {
+		top: calc(100% - #{$size__circleXs-radius});
+		left: calc(50% - #{$size__circleXs-radius});
+	}
+	.circle-container {
+		left: 11vw;
+	}
+}
+
+@media (max-width: 500.98px) {
+	.circle-img {
+		height: $size__circleXxs-diameter;
+		width: $size__circleXxs-diameter;
+	}
+	.circle-1 {
+		height: $size__circleXs-diameter;
+		width: $size__circleXs-diameter;
+		left: calc(50% - #{$size__circleXs-radius});
+		top: -#{$size__circleXs-radius};
+	}
+	.circle-2 {
+		height: $size__circleXs-diameter;
+		width: $size__circleXs-diameter;
+		left: -#{$size__circleXs-radius};
+		top: calc(50% - #{$size__circleXs-radius});
+	}
+	.circle-3 {
+		height: $size__circleXs-diameter;
+		width: $size__circleXs-diameter;
+		right: -#{$size__circleXs-radius};
+		top: calc(50% - #{$size__circleXs-radius});
+	}
+	.circle-4 {
+		height: $size__circleXs-diameter;
+		width: $size__circleXs-diameter;
+		top: calc(100% - #{$size__circleXs-radius});
+		left: calc(50% - #{$size__circleXs-radius});
+	}
+	.circle-container {
+		left: 15vw;
+	}
+}
